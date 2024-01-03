@@ -32,7 +32,7 @@ function addItem(e) {
         editMode.remove()
         isEditMode = false
     } else {
-        if (checkIfItemExist) {
+        if (checkIfItemExist(itemText.value)) {
             alert(`Hey buddy ${itemText.value} already exists in the list.`)
             return
         }
